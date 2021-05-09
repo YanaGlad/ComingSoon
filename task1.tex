@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[cp1251]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{graphicx}
+\pagestyle{plain}
+\usepackage{amsmath, amsfonts,amssymb,euscript}
+\begin{document}
+$$ (-1)^p \det C \begin{pmatrix}
+i_1 & i_2 & \ldots & i_p\\
+i_1 & i_2 & \ldots & i_p\\
+\end{pmatrix} > 0,
+\begin{array}{l}
+1 \leq i_1 < i_2 < \ldots < i_p \leq n \\
+p = 1, 2, \ldots, n,
+\end{array} $$
+$$\begin{pmatrix}
+||A_{11}^{(-1)}|| & ||A_{12}^{(-1)}||\\
+||A_{21}^{(-1)}|| & ||A_{22}^{(-1)}||
+\end{pmatrix} \leq
+\frac{\begin{pmatrix}
+||A_{22}^{-1}||^{-1} & ||A_{12}||\\
+||A_{21}^{-1}|| & ||A_{11}^{-1}||^{-1} \
+\end{pmatrix}}{||A_{11}^{-1}||^{-1}||A_{22}^{-1}||^{-1} - ||A_{12}||||A_{21}||}.$$
+$$ \mbox{spa} A \leq \frac{||A_{11}||_{\log}+||A_{22}||_{\log}}{2}+\sqrt{\left(\frac{||A_{11}||_{\log} -
+||A_{22}||_{\log}}{2}\right)^2 + ||A_{12}||||A_{21}||} < 0$$.
+$$||A||_0 = \mbox{max}_{1 \leq i \leq n} \sum_{j=1}^n a_{ij},\||A||_1 =\mbox{max}_{1 \leq i \leq n} \sum_{j=1}^n |a_{ji}|,\
+||A||_{1/2} = \sqrt{\mbox{spa} \ A*A}$$
+$$||A||_{0 \ \mbox{log}} = \mbox{max}_{1 \leq i \leq n} \{ Re \ a_{ij} + p_i (A) \},$$
+$$||A||_{1 \ \mbox{log}} = \mbox{max}_{1 \leq i \leq n} \{ Re \ a_{ij} + q_i (A) \}$$
+$$||A||_{1/2 \ \mbox{log}} = \mbox{spa} \ \frac{A + A*}{2}.$$
+\begin{center}
+\textit{Рядом с f(x) (значением функции f в точке х) лучше использовать прямые скобки (а не курсивные)}
+Когда одно из \tiny слов \normalsize набрано шрифтом другого кегля, это выглядит плохо.
+\tiny
+Мы закрываем группу и возвращаемся к обычному шрифту только после пустой строки, завершающей
+абзац.
+\normalsize
+Вот шрифт обычного размера.
+\tiny
+Здесь мы вернулись к обычному шрифту раньше времени, и межстрочные интервалы оказались слишком
+велики.
+\normalsize
+Вот шрифт обычного размера.
+Выберем \textbf{полужирный шрифт в курсивном начертании}(временно, конечно же).
+\end{center}
+\end{document}
