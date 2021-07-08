@@ -1,0 +1,98 @@
+\documentclass[a4paper]{scrartcl}
+\usepackage{amsmath,amssymb,amsfonts,euscript,geometry}
+\usepackage{microtype}
+\usepackage[cp1251]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[T2A]{fontenc}
+\begin{document}
+\large УДК 517.984
+\vspace{\baselineskip}
+\begin{center}
+
+\textbf{АБСОЛЮТНАЯ ЛОГАРИФМИЧЕСКАЯ НОРМА}$^1$
+\end{center}
+
+\begin{center}
+А.И. Иванов, О.И. Петров
+\end{center}
+
+\begin{center}
+\it 394006, Воронеж, Университетская пл., 1, Воронежский гос. ун-т. \rm Поступила в редакцию
+**.11.20** г.
+\end{center}
+
+\begin{quote}
+$\:\:\,$ В статье водится и изучается новое понятие – абсолютная логариф- мическая норма, –
+которое имеет много общего с классическим опреде- лением логарифмической нормы, данным С.
+М. Лозинским.
+\end{quote}
+
+\begin{quote}
+$\:\,$ \bf Ключевые слова: \rm логарифмическая норма, устойчивость по Лялунову, теория
+Перрона-Фробениуса неотрицательных матриц.
+\end{quote}
+
+\begin{center}
+\large 1. ПРЕДВАРИТЕЛЬНЫЕ СВЕДЕНИЯ
+\end{center}
+
+Пусть \textbf{A} $ = (a_{ij})$ – квадратная $n\times n$ - матрица и
+$\lambda_1(\textbf{A}),\lambda_2(\textbf{A}),...,\lambda_m(\textbf{A})(m \leq~n)$ полный набор
+попарно различных собственных значений матрицы \textbf{A}(спектр~$\mbox{sp} \; \textbf{A}$).
+Введём следующие числовые характеристики спектра
+$$ \mbox{spa} \: \textbf{A} = \max_{1\leq \it i\leq m} \: Re \: \lambda_{\it i} (\textbf{A}), \; \mbox{spr}
+\: \textbf{A} = \max_{1\leq \it i\leq m} \: |\lambda_{\it i} (\textbf{A})|.\eqno(1)$$
+\noindent Первая из формул $\left(1.1 \right)$ называется \it спектральной абсциссой \rm матрицы
+\textbf{A}, а вторая – хорошо известный её \it спектральный радиус. \rm Отметим, что всегда $ |
+\mbox{spa} \; \textbf{A}|\rm \leq~spr \: \textbf{A}$.
+
+\begin{center}
+\large 2. АБСОЛЮТНАЯ ВЕЛИЧИНА (МОДУЛЬ) ВЕКТОРА
+\end{center}
+
+Отметим простые свойства абсолютной величины вектора, напоминающие свойства нормы
+(сравни с [4, с. 127-129])
+
+\begin{itemize}
+\item[$1^0$] $|\textbf{x}| \geq \textbf{0} $,
+\item[$2^0$] $|\textbf{x}| = \textbf{0} \iff \textbf{x} = \textbf{0}$,
+\item[$3^0$] $|\it c \rm \textbf{x}| = |\it c||\rm \textbf{x}|~(\it c \in \mathbb{C}),$
+\item[$4^0$] $|\textbf{x} + \textbf{y}| \leq |\textbf{x}| + |\textbf{y}|$ (неравенство треугольника).
+\end{itemize}
+
+Из этих свойств вытекает обратное неравенство треугольника
+$$ |\textbf{x} - \textbf{y}| \geq ||\textbf{x}|-|\textbf{y}||. \eqno(2)$$
+\footnotetext[1] {Работа выполнена при финансовой поддержке РФФИ, No 16-01-00197.}
+\thispagestyle{empty}
+
+\newpage
+
+\textbf{Лемма 1.} \it Для произвольных комплексных чисел x и h справедлива формула
+$$ \lim_{0 < t \rightarrow 0} \frac{|x + th| - |x|}{t} = \begin{cases} \rm Re \it \frac{x\overline {h}}{|x|},
+&\text{если $x \neq 0;$}\\ \; \; \; \; |h|, &\text{если x = 0,} \end{cases} \eqno(3)$$
+\rm(\it где в верхней строке формулы \rm(3) \it черта – это черта комплексного сопряжения\rm).
+\textbf{Теорема 1.} \it Дифференциал Гато \rm $[\textbf{x},\textbf{h}]~: \mathbb{C}^n \times
+\mathbb{C}^n \rightarrow \mathbb{R}^n$ \it обладает следующими свойствами:
+
+\begin{itemize}
+\item[$1^0$] \rm $|[\textbf{x},\textbf{h}]| \leq |\textbf{h}|,
+[\textbf{0},\textbf{h}]=|\textbf{h}|$;\item[$2^0$] $[\textbf{x},\it c \rm \textbf{h}] = \it c[\rm
+\textbf{x},\textbf{h}]$ \; \, \, \it при\rm \; $c \geq 0$,\\
+$[\textbf{x},\it c \rm \textbf{h}] = \it -c[\rm \textbf{x},-\textbf{h}]$ \it при\rm \; $c < 0$;
+\item[$3^0$] $[\textbf{x}, \textbf{h} + \textbf{k}] \leq [\textbf{x}, \textbf{h}] + [\textbf{x}, \textbf{k}]$
+(\it полуаддитивность\rm);
+\item[$4^0$] $[\textbf{x},\textbf{h}] + [\textbf{x}, -\textbf{h}] \geq \textbf{0}~(=[\textbf{x},\textbf{0}])$.
+\end{itemize}
+\newpage
+
+\begin{center}
+\Large \rm СПИСОК ЛИТЕРАТУРЫ
+\end{center}
+
+\begin{enumerate}
+\item \it Былов Б. Ф., Виноград Р. Э., Гробман Д. М., Немыцкий В. В. \rm Теория показателей
+Ляпунова и её приложения к вопросам устойчивости. – М. : Наука, --- 1966.
+\item \it Лозинский С. М. \rm Оценка погрешности численного интегрирования обыкновенных
+дифференциальных уравнений // Изв. вузов. --- 1958. № 5.С. 52 --- 90.
+\end{enumerate}
+\end{document}
